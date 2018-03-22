@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0111F94D2054AC6500674642 /* TeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F94C2054AC6500674642 /* TeamsTableViewController.swift */; };
+		0111F94F2054ADAB00674642 /* TBAApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F94E2054ADAB00674642 /* TBAApi.swift */; };
+		0111F9512054ADCF00674642 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F9502054ADCF00674642 /* Team.swift */; };
+		0111F9532054C45A00674642 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F9522054C45A00674642 /* EventData.swift */; };
+		0111F9552054C9D100674642 /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F9542054C9D100674642 /* TeamTableViewController.swift */; };
+		0111F9572054C9F600674642 /* Scout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F9562054C9F600674642 /* Scout.swift */; };
+		0111F9592054DE7D00674642 /* ScoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F9582054DE7D00674642 /* ScoutTableViewController.swift */; };
+		0111F95B2054EE3700674642 /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F95A2054EE3700674642 /* AuthInfo.swift */; };
+		0111F95D2054F48100674642 /* ReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F95C2054F48100674642 /* ReportTableViewController.swift */; };
+		0111F95F205578BD00674642 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F95E205578BD00674642 /* DatabaseHandler.swift */; };
+		0111F961205579A400674642 /* MatchTeamsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F960205579A400674642 /* MatchTeamsTableViewController.swift */; };
+		0111F963205619F400674642 /* CreditsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0111F962205619F400674642 /* CreditsTableViewController.swift */; };
+		012F394420538E5300355F48 /* ScoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012F394320538E5300355F48 /* ScoutViewController.swift */; };
+		0140076C20614C7D00733FC2 /* PitScoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140076B20614C7D00733FC2 /* PitScoutViewController.swift */; };
+		0140076E20614F2300733FC2 /* PitScout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140076D20614F2300733FC2 /* PitScout.swift */; };
+		014007702062143200733FC2 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0140076F2062143200733FC2 /* CommentsViewController.swift */; };
+		01BDF243204EE294001B7CF4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BDF242204EE294001B7CF4 /* SignInViewController.swift */; };
+		01F250502052052B003CAB2A /* MatchScoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2504F2052052B003CAB2A /* MatchScoutViewController.swift */; };
+		01F2505220520BCE003CAB2A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F2505120520BCD003CAB2A /* PageViewController.swift */; };
+		01FB557B1FAA9B9000D5C743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB557A1FAA9B9000D5C743 /* AppDelegate.swift */; };
+		01FB557D1FAA9B9000D5C743 /* MatchScoutPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FB557C1FAA9B9000D5C743 /* MatchScoutPageViewController.swift */; };
+		01FB55801FAA9B9000D5C743 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FB557E1FAA9B9000D5C743 /* Main.storyboard */; settings = {ASSET_TAGS = (switchAuto, ); }; };
+		01FB55831FAA9B9000D5C743 /* Sciborgs_Scouting_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01FB55811FAA9B9000D5C743 /* Sciborgs_Scouting_App.xcdatamodeld */; };
+		01FB55851FAA9B9000D5C743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01FB55841FAA9B9000D5C743 /* Assets.xcassets */; };
+		01FB55881FAA9B9000D5C743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FB55861FAA9B9000D5C743 /* LaunchScreen.storyboard */; };
+		01FBC5F5205B5F4900452073 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FBC5F4205B5F4900452073 /* CurrentUser.swift */; };
+		E603547CAA7F95AE82C1CFD9 /* Pods_Sciborgs_Scouting_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084BE06368DF33F07B737E65 /* Pods_Sciborgs_Scouting_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0111F94C2054AC6500674642 /* TeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsTableViewController.swift; sourceTree = "<group>"; };
+		0111F94E2054ADAB00674642 /* TBAApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBAApi.swift; sourceTree = "<group>"; };
+		0111F9502054ADCF00674642 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		0111F9522054C45A00674642 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		0111F9542054C9D100674642 /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
+		0111F9562054C9F600674642 /* Scout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scout.swift; sourceTree = "<group>"; };
+		0111F9582054DE7D00674642 /* ScoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutTableViewController.swift; sourceTree = "<group>"; };
+		0111F95A2054EE3700674642 /* AuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfo.swift; sourceTree = "<group>"; };
+		0111F95C2054F48100674642 /* ReportTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewController.swift; sourceTree = "<group>"; };
+		0111F95E205578BD00674642 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
+		0111F960205579A400674642 /* MatchTeamsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTeamsTableViewController.swift; sourceTree = "<group>"; };
+		0111F962205619F400674642 /* CreditsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsTableViewController.swift; sourceTree = "<group>"; };
+		012F394320538E5300355F48 /* ScoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutViewController.swift; sourceTree = "<group>"; };
+		0140076B20614C7D00733FC2 /* PitScoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitScoutViewController.swift; sourceTree = "<group>"; };
+		0140076D20614F2300733FC2 /* PitScout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitScout.swift; sourceTree = "<group>"; };
+		0140076F2062143200733FC2 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		01BDF242204EE294001B7CF4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		01F2504F2052052B003CAB2A /* MatchScoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScoutViewController.swift; sourceTree = "<group>"; };
+		01F2505120520BCD003CAB2A /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		01FB55771FAA9B9000D5C743 /* Sciborgs Scouting App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sciborgs Scouting App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01FB557A1FAA9B9000D5C743 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01FB557C1FAA9B9000D5C743 /* MatchScoutPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchScoutPageViewController.swift; sourceTree = "<group>"; };
+		01FB557F1FAA9B9000D5C743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01FB55821FAA9B9000D5C743 /* Sciborgs_Scouting_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sciborgs_Scouting_App.xcdatamodel; sourceTree = "<group>"; };
+		01FB55841FAA9B9000D5C743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01FB55871FAA9B9000D5C743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01FB55891FAA9B9000D5C743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01FBC5F3205B597500452073 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/alexanderwarren/Desktop/stuff/Code/Sciborgs Scouting App/Sciborgs Scouting App/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
+		01FBC5F4205B5F4900452073 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		084BE06368DF33F07B737E65 /* Pods_Sciborgs_Scouting_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sciborgs_Scouting_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1F8B1C00750F5BD4B47654 /* Pods-Sciborgs Scouting App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sciborgs Scouting App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sciborgs Scouting App/Pods-Sciborgs Scouting App.release.xcconfig"; sourceTree = "<group>"; };
+		F7E20E18578D27EBE8EC1DA6 /* Pods-Sciborgs Scouting App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sciborgs Scouting App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sciborgs Scouting App/Pods-Sciborgs Scouting App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01FB55741FAA9B9000D5C743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E603547CAA7F95AE82C1CFD9 /* Pods_Sciborgs_Scouting_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01FB556E1FAA9B8F00D5C743 = {
+			isa = PBXGroup;
+			children = (
+				01FB55791FAA9B9000D5C743 /* Sciborgs Scouting App */,
+				01FB55781FAA9B9000D5C743 /* Products */,
+				273728040D5E3EA0BA0132E5 /* Pods */,
+				9C9D47B736E6E56A35BD9B47 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01FB55781FAA9B9000D5C743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01FB55771FAA9B9000D5C743 /* Sciborgs Scouting App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01FB55791FAA9B9000D5C743 /* Sciborgs Scouting App */ = {
+			isa = PBXGroup;
+			children = (
+				01FBC5F3205B597500452073 /* GoogleService-Info.plist */,
+				01FB557A1FAA9B9000D5C743 /* AppDelegate.swift */,
+				01BDF242204EE294001B7CF4 /* SignInViewController.swift */,
+				01FB557C1FAA9B9000D5C743 /* MatchScoutPageViewController.swift */,
+				01F2504F2052052B003CAB2A /* MatchScoutViewController.swift */,
+				01FB557E1FAA9B9000D5C743 /* Main.storyboard */,
+				0111F962205619F400674642 /* CreditsTableViewController.swift */,
+				0111F960205579A400674642 /* MatchTeamsTableViewController.swift */,
+				0111F95C2054F48100674642 /* ReportTableViewController.swift */,
+				0111F94C2054AC6500674642 /* TeamsTableViewController.swift */,
+				01FB55841FAA9B9000D5C743 /* Assets.xcassets */,
+				01FB55861FAA9B9000D5C743 /* LaunchScreen.storyboard */,
+				01FB55891FAA9B9000D5C743 /* Info.plist */,
+				01FB55811FAA9B9000D5C743 /* Sciborgs_Scouting_App.xcdatamodeld */,
+				01F2505120520BCD003CAB2A /* PageViewController.swift */,
+				012F394320538E5300355F48 /* ScoutViewController.swift */,
+				0140076B20614C7D00733FC2 /* PitScoutViewController.swift */,
+				01FBC5F4205B5F4900452073 /* CurrentUser.swift */,
+				0111F94E2054ADAB00674642 /* TBAApi.swift */,
+				0111F95A2054EE3700674642 /* AuthInfo.swift */,
+				0111F9502054ADCF00674642 /* Team.swift */,
+				0111F9562054C9F600674642 /* Scout.swift */,
+				0111F9522054C45A00674642 /* EventData.swift */,
+				0111F9542054C9D100674642 /* TeamTableViewController.swift */,
+				0140076F2062143200733FC2 /* CommentsViewController.swift */,
+				0111F9582054DE7D00674642 /* ScoutTableViewController.swift */,
+				0111F95E205578BD00674642 /* DatabaseHandler.swift */,
+				0140076D20614F2300733FC2 /* PitScout.swift */,
+			);
+			path = "Sciborgs Scouting App";
+			sourceTree = "<group>";
+		};
+		273728040D5E3EA0BA0132E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7E20E18578D27EBE8EC1DA6 /* Pods-Sciborgs Scouting App.debug.xcconfig */,
+				1A1F8B1C00750F5BD4B47654 /* Pods-Sciborgs Scouting App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9C9D47B736E6E56A35BD9B47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084BE06368DF33F07B737E65 /* Pods_Sciborgs_Scouting_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01FB55761FAA9B9000D5C743 /* Sciborgs Scouting App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01FB558C1FAA9B9000D5C743 /* Build configuration list for PBXNativeTarget "Sciborgs Scouting App" */;
+			buildPhases = (
+				61EFB0F091152159327531FE /* [CP] Check Pods Manifest.lock */,
+				01FB55731FAA9B9000D5C743 /* Sources */,
+				01FB55741FAA9B9000D5C743 /* Frameworks */,
+				01FB55751FAA9B9000D5C743 /* Resources */,
+				5B007AC1579D066FF13264E3 /* [CP] Embed Pods Frameworks */,
+				DFD8C57F749AB3C464C3E5BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sciborgs Scouting App";
+			productName = "Sciborgs Scouting App";
+			productReference = 01FB55771FAA9B9000D5C743 /* Sciborgs Scouting App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01FB556F1FAA9B8F00D5C743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					switchAuto,
+				);
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Alexander Warren";
+				TargetAttributes = {
+					01FB55761FAA9B9000D5C743 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 01FB55721FAA9B8F00D5C743 /* Build configuration list for PBXProject "Sciborgs Scouting App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01FB556E1FAA9B8F00D5C743;
+			productRefGroup = 01FB55781FAA9B9000D5C743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01FB55761FAA9B9000D5C743 /* Sciborgs Scouting App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01FB55751FAA9B9000D5C743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FB55881FAA9B9000D5C743 /* LaunchScreen.storyboard in Resources */,
+				01FB55851FAA9B9000D5C743 /* Assets.xcassets in Resources */,
+				01FB55801FAA9B9000D5C743 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B007AC1579D066FF13264E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sciborgs Scouting App/Pods-Sciborgs Scouting App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sciborgs Scouting App/Pods-Sciborgs Scouting App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61EFB0F091152159327531FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sciborgs Scouting App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD8C57F749AB3C464C3E5BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Sciborgs Scouting App/Pods-Sciborgs Scouting App-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sciborgs Scouting App/Pods-Sciborgs Scouting App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01FB55731FAA9B9000D5C743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012F394420538E5300355F48 /* ScoutViewController.swift in Sources */,
+				0111F94F2054ADAB00674642 /* TBAApi.swift in Sources */,
+				0111F95B2054EE3700674642 /* AuthInfo.swift in Sources */,
+				0111F9552054C9D100674642 /* TeamTableViewController.swift in Sources */,
+				0111F95F205578BD00674642 /* DatabaseHandler.swift in Sources */,
+				01BDF243204EE294001B7CF4 /* SignInViewController.swift in Sources */,
+				0111F9592054DE7D00674642 /* ScoutTableViewController.swift in Sources */,
+				0111F94D2054AC6500674642 /* TeamsTableViewController.swift in Sources */,
+				0140076E20614F2300733FC2 /* PitScout.swift in Sources */,
+				0140076C20614C7D00733FC2 /* PitScoutViewController.swift in Sources */,
+				0111F9532054C45A00674642 /* EventData.swift in Sources */,
+				01FB557D1FAA9B9000D5C743 /* MatchScoutPageViewController.swift in Sources */,
+				01FBC5F5205B5F4900452073 /* CurrentUser.swift in Sources */,
+				0111F961205579A400674642 /* MatchTeamsTableViewController.swift in Sources */,
+				014007702062143200733FC2 /* CommentsViewController.swift in Sources */,
+				01FB55831FAA9B9000D5C743 /* Sciborgs_Scouting_App.xcdatamodeld in Sources */,
+				0111F963205619F400674642 /* CreditsTableViewController.swift in Sources */,
+				01F2505220520BCE003CAB2A /* PageViewController.swift in Sources */,
+				0111F9572054C9F600674642 /* Scout.swift in Sources */,
+				01FB557B1FAA9B9000D5C743 /* AppDelegate.swift in Sources */,
+				0111F95D2054F48100674642 /* ReportTableViewController.swift in Sources */,
+				0111F9512054ADCF00674642 /* Team.swift in Sources */,
+				01F250502052052B003CAB2A /* MatchScoutViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01FB557E1FAA9B9000D5C743 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01FB557F1FAA9B9000D5C743 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01FB55861FAA9B9000D5C743 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01FB55871FAA9B9000D5C743 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01FB558A1FAA9B9000D5C743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01FB558B1FAA9B9000D5C743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01FB558D1FAA9B9000D5C743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7E20E18578D27EBE8EC1DA6 /* Pods-Sciborgs Scouting App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5DL88AV3E;
+				INFOPLIST_FILE = "Sciborgs Scouting App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlexanderWarren.Sciborgs-Scouting-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		01FB558E1FAA9B9000D5C743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A1F8B1C00750F5BD4B47654 /* Pods-Sciborgs Scouting App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5DL88AV3E;
+				INFOPLIST_FILE = "Sciborgs Scouting App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AlexanderWarren.Sciborgs-Scouting-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01FB55721FAA9B8F00D5C743 /* Build configuration list for PBXProject "Sciborgs Scouting App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01FB558A1FAA9B9000D5C743 /* Debug */,
+				01FB558B1FAA9B9000D5C743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01FB558C1FAA9B9000D5C743 /* Build configuration list for PBXNativeTarget "Sciborgs Scouting App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01FB558D1FAA9B9000D5C743 /* Debug */,
+				01FB558E1FAA9B9000D5C743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		01FB55811FAA9B9000D5C743 /* Sciborgs_Scouting_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				01FB55821FAA9B9000D5C743 /* Sciborgs_Scouting_App.xcdatamodel */,
+			);
+			currentVersion = 01FB55821FAA9B9000D5C743 /* Sciborgs_Scouting_App.xcdatamodel */;
+			path = Sciborgs_Scouting_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 01FB556F1FAA9B8F00D5C743 /* Project object */;
+}

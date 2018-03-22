@@ -1,0 +1,6 @@
+framework module Pods_Sciborgs_Scouting_App {
+  umbrella header "Pods-Sciborgs Scouting App-umbrella.h"
+
+  export *
+  module * { export * }
+}
