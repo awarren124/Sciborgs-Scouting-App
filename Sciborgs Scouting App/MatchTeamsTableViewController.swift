@@ -12,6 +12,7 @@ class MatchTeamsTableViewController: UITableViewController {
 
     var matchNumber: Int!
     var teams = [String : [Int]]()
+    var teamAverages = [Int : Double]()
     override func viewDidLoad() {
         super.viewDidLoad()
         TBAApi.getTeamsInMatchWith(num: matchNumber) { (teams) in
@@ -19,7 +20,42 @@ class MatchTeamsTableViewController: UITableViewController {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
+            let teamNums = teams["blue"]! + teams["red"]!//teams.values.flatMap { $0 }
+            print("teamNums: \(teamNums)")
+            for teamNum in teamNums {
+                
+                DatabaseHandler.getTeam(teamNumber: teamNum, completion: { (team) in
+                    //                self.team = team
+                    print("team ps \(team.pitScout.values)")
+                    print(team.stats)
+                    let vals = Array(team.stats.values)
+                    
+                    print("vals: \(vals)")
+                    var sum: Double = 0
+                    
+                    for key in Team.statOrder[0...5] {
+                        print("key: \(key)")
+                        if let val = team.stats[key] {
+                            sum += val
+                        }
+                    }
+                    
+                    
+//                    let sum = vals.reduce(0, { x, y in
+//                        x + y
+//                    })
+                    
+                    print("sum: \(sum)")
+                    
+                    self.teamAverages[teamNum] = sum
+                    self.tableView.reloadData()
+                    //                SVProgressHUD.dismiss()
+                })
+            }
+
         }
+        
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -55,10 +91,18 @@ class MatchTeamsTableViewController: UITableViewController {
 
         if(indexPath.section == 0){
             cell.textLabel?.text = "\(teams["blue"]![indexPath.row])"
-            cell.detailTextLabel?.text = EventData.nameForTeam(num: teams["blue"]![indexPath.row])
+            if let sum = teamAverages[teams["blue"]![indexPath.row]] {
+                cell.detailTextLabel?.text = "\(sum)"//EventData.nameForTeam(num: teams["blue"]![indexPath.row])
+            }else{
+                cell.detailTextLabel?.text = "N/A"
+            }
         }else{
             cell.textLabel?.text = "\(teams["red"]![indexPath.row])"
-            cell.detailTextLabel?.text = EventData.nameForTeam(num: teams["red"]![indexPath.row])
+            if let sum = teamAverages[teams["red"]![indexPath.row]] {
+                cell.detailTextLabel?.text = "\(sum)"//EventData.nameForTeam(num: teams["blue"]![indexPath.row])
+            }else{
+                cell.detailTextLabel?.text = "N/A"
+            }
         }
 
         return cell
@@ -109,7 +153,7 @@ class MatchTeamsTableViewController: UITableViewController {
             if let cell = sender as? UITableViewCell{
                 let num = Int((cell.textLabel?.text!)!)!
                 vc.teamNum = num
-
+                vc.title = "Team \(num)"
 //                DatabaseHandler.getTeam(teamNumber: num, completion: { (team) in
 //                    vc.team = team
 //                })

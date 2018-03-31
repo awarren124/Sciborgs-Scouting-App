@@ -55,12 +55,12 @@ public class TBAApi {
                     for team in blueTeams {
                         let index = team.index(team.startIndex, offsetBy: 3)
                         let num = Int(team.suffix(from: index))!
-                        redTeamNums.append(num)
+                        blueTeamNums.append(num)
                     }
                     for team in redTeams {
                         let index = team.index(team.startIndex, offsetBy: 3)
                         let num = Int(team.suffix(from: index))!
-                        blueTeamNums.append(num)
+                        redTeamNums.append(num)
                     }
                     let teams = [
                         "blue" : blueTeamNums,

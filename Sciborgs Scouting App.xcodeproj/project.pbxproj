@@ -465,6 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5DL88AV3E;
 				INFOPLIST_FILE = "Sciborgs Scouting App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AlexanderWarren.Sciborgs-Scouting-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -481,6 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M5DL88AV3E;
 				INFOPLIST_FILE = "Sciborgs Scouting App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.AlexanderWarren.Sciborgs-Scouting-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
